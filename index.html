@@ -24,7 +24,7 @@
     }
     header img {
       width: 100%;
-      max-width: 600px;
+      max-width: 650px;
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     }
@@ -109,13 +109,19 @@
 <body>
   <div class="container">
     <header>
-      <img src="https://i.imgur.com/qWY4Gc0.jpg" alt="Frank's Coffee Van" />
+      <img src="https://i.imgur.com/UeKO5Hg.jpeg" alt="Frank's Coffee Van" />
       <h1>☕🚐 Help Me Build My Coffee Van</h1>
     </header>
+
     <p>
       I’m Frank — I lost my business, but not my hope. With your help, I want to start again with a dream: turning a van into a coffee shop to earn a living and give back to the community.
     </p>
+
+    <p class="thanks">I, Frank, will never forget your kindness. ❤️</p>
+
     <p class="highlight">🎯 Goal: $150,000 | Raised: $0</p>
+
+    <p style="color:#444; font-weight: 500;">لطفاً برای رسیدنم به آرزوهام از طریق آدرس‌های رمزارز، بهم کمک کنید.</p>
 
     <div class="wallet-grid">
       <div class="wallet">
@@ -146,7 +152,6 @@
     </div>
 
     <p class="quote">"God loves hands that help more than lips that pray."</p>
-    <p class="thanks">I, Frank, will never forget your kindness. ❤️</p>
 
     <div class="social">
       <a href="https://www.instagram.com/cafelifefrank" target="_blank">
@@ -161,9 +166,9 @@
   <script>
     function copy(id) {
       const input = document.getElementById(id);
-      navigator.clipboard.writeText(input.value)
-        .then(() => alert("Address copied to clipboard!"))
-        .catch(() => alert("Failed to copy address."));
+      navigator.clipboard.writeText(input.value).then(() => {
+        alert("Copied!");
+      });
     }
   </script>
 </body>
